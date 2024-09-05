@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto desenvolvido para clínica odontolágica">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+
+        <div class="container">
+
+            <div class="logo">
+                <img src="img/logo.svg" alt="logotipo">
+            </div>
+
+            <div class="btn-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <nav class="menu">
+                <a href="#">Início</a>
+                <a href="#">Quem Somos</a>
+                <a href="#">Nossos Serviços</a>
+                <a href="#">Fale Conosco</a>
+                <button class="btn">Login</button>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section class="container hero">
+        <div class="content-hero">
+            <span class="etiqueta">Especialista em clareamentos</span>
+            <h1>Seu <span class="text-brand">sorriso</span> é a nossa motivação!</h1>
+            <p class="content-hero-subtitle">Cuidamos do seu sorriso com excelência e garantimos tratamentos odontológicos de alta qualidade.</p>
+            <a href="#" class="btn">Agende uma consulta</a>
+            <p>Responsável <span class="text-brand">Dra. Amanda Carvalho</span></p>
+        </div>
+        <div class="image-hero" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <img src="img/hero-image.png" alt="figura da dentista sorrindo para a câmera">
+        </div>
+    </section>
+
+    <section class="container apresentacao" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+        <div class="image-apresentacao">
+            <img src="img/clinica.jpg" alt="imagem da clínica">
+        </div>
+        <div class="content-apresentacao">
+            <h2>Tecnologia de ponta a serviço do seu sorriso</h2>
+            <p>Utilizamos as mais avançadas tecnologias odontológicas para garantir tratamentos precisos e eficazes. Desde diagnósticos digitais até equipamentos de última geração.</p>
+            <p>Estamos comprometidos em oferecer o melhor cuidado para o seu sorriso. Venha experimentar a diferença que a inovação pode fazer na sua saúde bucal.</p>
+            <a href="#" class="btn">Conheça nossas instalações</a>
+
+        </div>
+    </section>
+
+    <section class="container servicos" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+
+        <article class="content-servicos">
+            <h2>Nossos Serviços</h2>
+            <p>De cuidados preventivos a soluções avançadas, nossa equipe está pronta para atender todas as suas necessidades odontológicas. <strong>Escolha seu serviço abaixo.</strong></p>
+        </article>
+
+        <div class="flex-cards">
+            <div class="card">
+                <h3>Check-up Odontológico</h3>
+                <p>Exames de rotina e avaliações gerais da saúde bucal.</p>    
+            </div>
+
+            <div class="card">
+                <h3>Clareamento Dental</h3>
+                <p>Procedimentos para branqueamento dos dentes, realçando o sorriso.</p>    
+            </div>
+
+            <div class="card">
+                <h3>Ortodontia</h3>
+                <p>Correção do alinhamento dos dentes e mordida com aparelhos fixos e móveis.</p>    
+            </div>
+
+            <div class="card">
+                <h3>Implantes Dentários</h3>
+                <p>Substituição de dentes perdidos com implantes de titânio.</p>    
+            </div>
+
+            <div class="card">
+                <h3>Próteses Dentárias</h3>
+                <p>Confeccionamento de próteses parciais e totais para reposição de dentes.</p>    
+            </div>
+
+            <div class="card">
+                <h3>Tratamento de Canal</h3>
+                <p>Tratamento endodôntico para salvar dentes com infecção ou danos na raiz.</p>    
+            </div>
+        </div>
+
+    </section>
+
+    <section class="agende" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+        <div class="container">
+            <div class="image-agende">
+                <img src="img/sorriso.png" alt="Paciente sorrindo">
+            </div>
+            <div class="content-agende">
+                <h2>Agende agora mesmo sua consulta</h2>
+                <p><strong>Não perca tempo!</strong> Agende sua consulta e comece a cuidar do seu sorriso hoje mesmo. Nossa equipe está pronta para receber você com atenção e dedicação.</p>
+                <a href="#" class="btn btn-outline">Quero fazer uma avaliação</a>
+            </div>
+        </div>
+    </section>
+
+    <article class="container depoimentos" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+        <h2>O que nossos pacientes dizem</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p>"Minha experiência na clínica foi excepcional. Desde o atendimento inicial até o final do tratamento, a equipe foi extremamente profissional e atenciosa. Meu clareamento dental  superou minhas expectativas e o resultado ficou maravilhoso!"</p>
+                    <span>Claudio Silva</span>            
+                </div>
+                <div class="swiper-slide">
+                    <p>"Teste 1234!"</p>
+                    <span>Luciano Faria</span>            
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>    
+    </article>
+
+    <div class="container contato" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+        <div class="content-contato">
+            <h2>A melhor clínica odontológica do Rio</h2>
+            
+            <div class="endereco">
+                <h3>Endereço</h3>
+                <p>Av. Rio Branco, 185 - Sala 308 - Centro - Rio de Janeiro</p>
+            </div>
+            
+            <div>
+                <h3>Horário de atendimento</h3>
+                <ul>
+                    <li>Seg a Sex: 9:00 às 17:00</li>
+                    <li>Sáb: 9:00 às 12:00</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Ligue pra gente</h3>
+                <ul>
+                    <li>(21) 2266-1234</li>
+                    <li>(21) 99897-4321</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.15666973083!2d-43.1764469!3d-22.9075915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f606f39cb1d%3A0x3546ec8927211c05!2sAv.%20Rio%20Branco%2C%20185%20-%20sala%20308%20-%20Centro%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020040-007!5e0!3m2!1spt-BR!2sbr!4v1723758611879!5m2!1spt-BR!2sbr" width="558" height="460" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-text">
+                <span>OdontoRio, cuidando do seu sorriso há mais de 10 anos</span>
+            </div>
+            <div class="social">
+                <a href="https://wa.me/5521992759367" class=""><img src="img/whatsapp.svg" alt=""></a>
+                <a href="#" class=""><img src="img/instagram.svg" alt=""></a>
+                <a href="#" class=""><img src="img/twitter.svg" alt=""></a>
+            </div>    
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5521992759367" class="btn-whatsapp"><img src="img/whatsapp2.svg" alt=""></a>    
+
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,        
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+</body>
+</html>
