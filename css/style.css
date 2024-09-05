@@ -1,0 +1,456 @@
+/* declaração de variáveis */
+:root{
+    --brand: #20ad96;
+    --brand-dark: #028176;
+    --brand-light: #F3FFFD;
+    --title: #333333;
+    --text:#666666;
+}
+
+body{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+img{
+    display: block;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+h2{
+    font-size: 40px;
+    line-height: 100%;
+    color: var(--title);
+}
+
+h3{
+    font-size: 24px;
+    color: var(--brand);
+}
+
+p{
+    color: var(--text);
+    line-height: 150%; /* altura da linha */
+}
+
+.header{
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    /* Sombra hori, vert, suavidade, cor */
+    box-shadow: 2px 2px 5px 0px #EEEEEE;
+
+    background-color: #ffffff;
+    position: sticky; /* posição fixa somente após a rolagem */
+    top: 0;
+
+    z-index: 1; /* quanto maior o valor, mais a frente o elemento estará posicionado */
+}
+
+.container{
+    
+    /*width: 100%;
+    /*max-width: 1164px; /* 1164 - 24 = 1140 
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box; faz com que o passing e o border não aumentem o tamanho da tela */
+    
+    /* O código abaixo tem o mesmo valor do código acima */
+    width: calc(100% - 24px);
+    max-width: 1140px;
+
+    /* centraliza o container */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* formatando o container dentro do header */
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.menu a{
+    font-size: 14px;
+    color: var(--title);
+    text-decoration: none;
+}
+
+.menu a:hover{
+ color: var(--brand);
+}
+
+.btn{
+    background-color: var(--brand);
+    color: white;
+    border: none; /* removendo a borda*/
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 12px 30px; /* top, bottom... left, right*/
+    /* padding: 12px 30px 12px 30px;  top, bottom... left, right*/
+    text-decoration: none; /* Retira o sublinhado */
+    cursor: pointer; /* Alterar o cursor do mouse */
+
+    display: inline-block;
+}
+
+.btn:hover{
+    background-color: var(--brand-dark);
+}
+
+.btn-outline{
+    border: solid 2px #ffffff;
+    background-color: transparent;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.content-hero{
+    max-width: 558px;
+}
+
+.content-hero h1{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 100%;
+    color: var(--title);  
+}
+
+.content-hero-subtitle{
+    font-size: 20px;
+}
+
+.text-brand{
+    color: var(--brand);
+}
+
+.etiqueta{
+    color: var(--brand);
+    border: var(--brand) 1px solid;
+    /* Substitui a linha acima
+    border-color: var(--brand);
+    border-style: solid;
+    border-width: 1px;*/
+
+    font-size: 14px;
+    border-radius: 30px;
+    padding: 8px 28px;
+    display: inline-block;
+    margin-bottom: 20px;
+    line-height: 100%;
+}
+.apresentacao{
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    margin-bottom: 100px;
+}
+
+.servicos{
+    text-align: center;
+}
+
+.content-servicos{
+    max-width: 752px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-cards{
+    display: flex;
+    flex-wrap: wrap; /* permitindo múltiplas linhas */
+    gap: 24px;
+    justify-content: center;
+}
+
+.card{
+    max-width: 364px;
+    height: 200px;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* aplicação de alterações no card em 0.3s*/
+    transition: 0.3s;
+}
+
+/* ao passar o mouse no browser */
+.card:hover{
+    background-image: linear-gradient(to right,var(--brand),var(--brand-dark));
+    transform: scale(1.03);
+}
+
+/*formatar h3 ao passar o mouse no browser */
+.card:hover h3, .card:hover p {
+    color: #ffffff;
+}
+
+.agende{
+    background-image: linear-gradient(to right,var(--brand),var(--brand-dark));
+    margin: 100px 0px; /*vertical, horizontal*/
+}
+
+.agende .container{
+    display: flex;
+    justify-content: flex-end;
+    /*align-items: center;
+    column-gap: 24px;*/
+
+    position: relative; /* só para servir de referência ao absolute */
+    padding-top: 54px;
+    padding-bottom: 54px;
+}
+
+.agende h2, .agende p{
+    color: #ffffff;
+}
+
+.image-agende{
+    /* Posição em relação ao elemento PAI (desde que ele tenha position)
+       Caso contrário, será em fereência ao body */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.content-agende{
+    max-width: 850px;
+    width: calc(100% - 270px);
+}
+
+.btn-whatsapp{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.2);
+}
+
+.depoimentos{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.depoimentos p{
+    font-size: 20px;
+    font-style: italic;
+    padding-left: 96px;
+    padding-right: 96px;
+
+}
+
+.depoimentos span{
+    color: var(--brand);
+    font-weight: 600;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: var(--brand);
+}
+
+.contato{
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.contato ul{
+    color: var(--text);
+    padding: 0;
+    list-style-position: inside; /* alterando a posição do marcador */
+    list-style-type: disc; /* alterando o estilo do marcador */
+}
+
+.contato h2{
+    margin-bottom: 24px;
+}
+
+.footer{
+    background-image: linear-gradient(to right,var(--brand),var(--brand-dark));
+    padding: 20px 0;
+    align-items: center;
+    color: #ffffff;
+}
+
+.footer .container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.social{
+    display: flex;
+    column-gap: 20px;
+}
+
+/*
+Media Queries (condições)
+Para telas de 0 até 1279px 
+*/
+@media (max-width: 1279px) {
+    h2{
+        font-size: 28px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    .menu{        
+        position: absolute;
+        transform: translateX(-100%);
+        background-color: rgba(32,173,149,0.7);
+        backdrop-filter: blur(10px);        
+        left: 0;
+        top: 97px;
+        width: 100%;
+        flex-direction: column;
+        transition: 0.5s;
+    }
+
+    .menu-open{        
+        transform: translateX(0);
+    }
+
+    .menu a{
+        width: 100%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        border-bottom: 1px solid var(--brand-light);
+        color: var(--brand-light);
+    }
+
+    .menu a:hover{
+        background-color: var(--brand-dark);
+        color: var(--brand-light);
+    }
+
+    .menu .btn{
+        background-color: var(--brand-dark);
+        width: 100%;
+        border-radius: 0;
+        padding: 20px 12px;
+    }
+
+    .btn-menu{
+        display: flex;
+        flex-direction: column;
+        row-gap: 3px;
+    }
+
+    .bar{
+        width: 40px;
+        height: 3px;
+        background-color: var(--brand);
+        transition: 0.5s;
+    }
+
+    /* Formatar as barras quando a classe x existir */
+    .x .bar:first-child{
+        transform: rotate(45deg) translate(3px,0);
+    }
+
+    .x .bar:nth-child(2){
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    .x .bar:last-child{
+        transform: rotate(-45deg) translate(9px,-5px);
+    }
+
+    .hero{
+        flex-direction: column-reverse;
+        row-gap: 36px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+
+    .image-hero img{
+        max-width: 100%; /* largura máximo da imagem  (largura original)*/
+    }
+
+    .content-hero h1{
+        font-size: 36px;
+    }
+
+    .content-hero-subtitle{
+        font-size: 16px;
+    }
+
+    .apresentacao{
+        flex-direction: column;
+        row-gap: 36px;
+    }
+
+    .image-apresentacao img{
+        max-width: 100%; /* largura máximo da imagem  (largura original)*/
+    }
+
+    .depoimentos p{
+        font-size: 16px;
+    }
+
+    .contato{
+        flex-direction: column;
+    }
+
+    .content-mapa{
+        width: 100%;
+        /*height: 100%;*/
+    }
+
+    .contato iframe{
+        width: 100%;
+       /* height: 100%;*/
+    }
+
+    .btn-whatsapp{
+        bottom: 100px;
+    }
+}
+
+@media (max-width: 767px){
+    .image-agende{
+        display: none;
+    }
+
+    .content-agende{
+        width: 100%;
+    }
+
+    .footer-text{
+        text-align: center;
+    }
+
+    .footer .container{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
