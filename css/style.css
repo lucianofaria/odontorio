@@ -92,6 +92,18 @@ p{
  color: var(--brand);
 }
 
+.menu a::before {
+    content: "";
+    display: block;
+    background-color: var(--brand);
+    height: 3px;
+    width: 0;
+    transition: 0.2s ease-out;
+}
+.menu a:hover::before {
+    width: 100%;
+}
+
 .btn{
     background-color: var(--brand);
     color: white;
